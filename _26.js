@@ -1,4 +1,4 @@
-const entrada = require('prompt-sync')({sigint:true})
+const prompt = require('prompt-sync')({sigint:true})
 
 /* 
 Faça um algoritmo para ler: quantidade atual em estoque, quantidade máxima em estoque e
@@ -8,10 +8,10 @@ a quantidade média escrever a mensagem 'Não efetuar compra', senão escrever a
 compra'. 
 */
 
-let quantidadeAtual = parseFloat(entrada("Informe a quantidade atual em estoque: "));
+let quantidadeAtual = parseFloat(prompt("Informe a quantidade atual em estoque: "));
 
-let quantidadeMinima = parseFloat(entrada("Informe a quantidade máxima em estoque: "));
-let quantidadeMaxima = parseFloat(entrada("Informe a quantidade miníma em estoque: "));
+let quantidadeMinima = parseFloat(prompt("Informe a quantidade máxima em estoque: "));
+let quantidadeMaxima = parseFloat(prompt("Informe a quantidade miníma em estoque: "));
 
 let quantidadeMedia = ((quantidadeMaxima + quantidadeMinima) / 2);
 
